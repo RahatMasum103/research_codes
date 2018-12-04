@@ -194,51 +194,12 @@ public class InputBusReader {
             fBusTopo.close();
             fw.close();
 
-            /*
-            fw = new FileWriter("X_MAT_" + csvFile + ".txt");
-
-            for (int i = 0; i < bus_size; i++) {
-
-                for (int j = 0; j < bus_size; j++) {
-                    if (X[i][j] == null) {
-                        fw.write(0 + " ");
-                    } else {
-                        fw.write(X[i][j] + " ");
-                    }
-                }
-                fw.write("\n");
-            }
-            fw.close();
-            
-            
-            DecimalFormat df = new DecimalFormat("##.###");
-            
-            fw = new FileWriter("B_ref_MAT_" + csvFile + ".txt");
-
-            for (int i = 0; i < bus_size; i++) {
-
-                for (int j = 0; j < bus_size; j++) {
-                    
-//                    if(i==0 || j == 0 ) continue;
-                    
-                    if (B[i][j] == null) {
-                        fw.write(0.00 + " ");
-                    } else {
-                        fw.write(df.format(B[i][j]) + " ");
-                    }
-                }
-                fw.write("\n");
-            }
-            fw.close();
-*/
+           
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
-        
-        
-
+      
     }
 
     public static void main(String[] args) {
